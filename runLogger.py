@@ -1,6 +1,6 @@
-import requests
+
 import sys
-from requests.auth import HTTPBasicAuth
+
 
 
   
@@ -14,8 +14,7 @@ class runLogger():
 
    
   def run(self):
-    print('test run')
-
+    print
 
 if __name__ == "__main__":
   q = runLogger().run()
