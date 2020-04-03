@@ -11,13 +11,13 @@ class runLogger():
     self.pdpurl = 'https://sxxx'
     print('self.pdpurl =',self.pdpurl)
    
+  def __init__(self):
+    
+    self.pdpurl = 'https://sxxx'
+    print('self.pdpurl =',self.pdpurl)
+   
   def run(self):
-    payload = {"input":{}}
-    response2 = requests.post(
-    self.pdpurl,auth=HTTPBasicAuth('id', 'pwd'),json=payload,headers={'Content-Type': 'application/json','Accept': 'application/json'})
-    print('response=',response2.headers)
-    print('response.text=',response2.text)
-    print('response.json=',response2.status_code)
+    print('test run')
     return response2.text
 
 if __name__ == "__main__":
